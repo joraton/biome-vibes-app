@@ -1,0 +1,170 @@
+[
+  {
+    "id": "forets",
+    "nom": "Forêts",
+    "image": "https://cdn.pixabay.com/photo/2019/10/10/14/52/forest-4539730_1280.jpg",
+    "theme": { "primary": "#0f5132", "accent": "#198754", "bg": "#0b2d20", "unsplash": "tropical rainforest canopy" },
+    "subBiomes": [
+      {
+        "id": "foret-tropicale-humide",
+        "nom": "Forêt tropicale humide",
+        "image": "https://cdn.pixabay.com/photo/2018/01/30/22/48/rainforest-3119822_1280.jpg",
+        "subEcosystems": ["Canopée dense", "Sous-bois ombragé", "Mangroves tropicales"]
+      },
+      { 
+        "id": "foret-tropicale-seche", 
+        "nom": "Forêt tropicale sèche", 
+        "image": "https://cdn.pixabay.com/photo/2019/08/14/01/27/forest-4404497_1280.jpg",
+        "subEcosystems": [] 
+      },
+      {
+        "id": "foret-temperee",
+        "nom": "Forêt tempérée",
+        "image": "https://cdn.pixabay.com/photo/2017/11/12/13/37/forest-2942477_1280.jpg",
+        "subEcosystems": ["Forêt feuillue caducifoliée", "Forêt mixte (feuillus + conifères)"]
+      },
+      {
+        "id": "foret-boreale-taiga",
+        "nom": "Forêt boréale (taïga)",
+        "image": "https://cdn.pixabay.com/photo/2022/08/28/08/23/taiga-7415960_1280.jpg",
+        "subEcosystems": ["Conifères denses", "Zones de tourbières marécageuses"]
+      }
+    ]
+  },
+  {
+    "id": "prairies-savanes",
+    "nom": "Prairies et savanes",
+    "image": "https://cdn.pixabay.com/photo/2017/12/19/22/09/prairie-3028804_1280.jpg",
+    "theme": { "primary": "#b58900", "accent": "#e0a800", "bg": "#3b2f14", "unsplash": "savanna acacia grassland" },
+    "subBiomes": [
+      {
+        "id": "savane-tropicale",
+        "nom": "Savane tropicale",
+        "image": "https://cdn.pixabay.com/photo/2019/04/12/11/46/antelope-4121962_1280.jpg",
+        "subEcosystems": ["Zones herbeuses avec arbres épars", "Savane arbustive"]
+      },
+      {
+        "id": "prairie-temperee",
+        "nom": "Prairie tempérée",
+        "image": "https://cdn.pixabay.com/photo/2020/07/18/23/00/grassland-5418516_1280.jpg",
+        "subEcosystems": ["Steppe (Eurasie)", "Prairie nord-américaine (Great Plains)", "Pampa (Amérique du Sud)"]
+      }
+    ]
+  },
+  {
+    "id": "regions-froides",
+    "nom": "Régions froides",
+    "image": "https://cdn.pixabay.com/photo/2012/10/26/03/14/siberia-63182_1280.jpg",
+    "theme": { "primary": "#1e3a8a", "accent": "#60a5fa", "bg": "#0b1220", "unsplash": "arctic tundra landscape" },
+    "subBiomes": [
+      {
+        "id": "toundra-arctique",
+        "nom": "Toundra arctique",
+        "image": "https://cdn.pixabay.com/photo/2021/08/26/18/31/road-6576857_1280.jpg",
+        "subEcosystems": ["Pergélisol", "Mousses, lichens, arbustes bas"]
+      },
+      { 
+        "id": "toundra-alpine", 
+        "nom": "Toundra alpine (montagne)", 
+        "image": "https://cdn.pixabay.com/photo/2020/07/01/12/59/mountains-5359560_1280.jpg",
+        "subEcosystems": [] 
+      }
+    ]
+  },
+  {
+    "id": "deserts",
+    "nom": "Déserts",
+    "image": "https://cdn.pixabay.com/photo/2021/10/30/17/54/desert-6755127_1280.jpg",
+    "theme": { "primary": "#a16207", "accent": "#f59e0b", "bg": "#2b1d0b", "unsplash": "sand desert dunes" },
+    "subBiomes": [
+      {
+        "id": "desert-chaud",
+        "nom": "Désert chaud",
+        "image": "https://cdn.pixabay.com/photo/2021/10/30/17/54/desert-6755127_1280.jpg",
+        "subEcosystems": ["Désert sableux (Sahara)", "Désert rocheux (Moyen-Orient)"]
+      },
+      {
+        "id": "desert-froid",
+        "nom": "Désert froid",
+        "image": "https://cdn.pixabay.com/photo/2019/11/10/15/57/chile-4616138_1280.jpg",
+        "subEcosystems": ["Gobi", "Antarctique intérieur (zones polaires sèches)"]
+      }
+    ]
+  },
+  {
+    "id": "ecosystemes-aquatiques",
+    "nom": "Écosystèmes aquatiques",
+    "image": "https://cdn.pixabay.com/photo/2014/06/30/08/02/zitronenfalter-fish-380037_1280.jpg",
+    "theme": { "primary": "#0ea5e9", "accent": "#38bdf8", "bg": "#052231", "unsplash": "clear lake water underwater" },
+    "subBiomes": [
+      {
+        "id": "eaux-douces-lacs-etangs",
+        "nom": "Lacs & étangs (eaux douces)",
+        "image": "https://cdn.pixabay.com/photo/2023/06/13/05/43/reflection-8060005_1280.jpg",
+        "subEcosystems": ["Zone littorale (rivage)", "Zone pélagique (pleine eau)", "Zone benthique (fonds)"]
+      },
+      {
+        "id": "eaux-douces-rivieres-fleuves",
+        "nom": "Rivières & fleuves (eaux douces)",
+        "image": "https://cdn.pixabay.com/photo/2023/01/11/15/39/river-7712017_1280.jpg",
+        "subEcosystems": ["Source (amont)", "Cours moyen", "Embouchure (delta, estuaire)"]
+      },
+      {
+        "id": "eaux-douces-marais-zones-humides",
+        "nom": "Marais & zones humides (eaux douces)",
+        "image": "https://cdn.pixabay.com/photo/2014/05/27/00/52/swamp-355057_1280.jpg",
+        "subEcosystems": ["Marais d'eau douce", "Tourbières"]
+      },
+      {
+        "id": "marin-cotes-peu-profond",
+        "nom": "Côtes & zones peu profondes (marin)",
+        "image": "https://cdn.pixabay.com/photo/2017/04/13/20/10/maldives-2225411_1280.jpg",
+        "subEcosystems": ["Mangroves", "Herbiers marins", "Récifs coralliens"]
+      },
+      {
+        "id": "marin-oceans-ouverts",
+        "nom": "Océans ouverts (pélagiques)",
+        "image": "https://cdn.pixabay.com/photo/2022/09/14/19/05/sea-7455050_1280.jpg",
+        "subEcosystems": ["Zone photique (surface éclairée)", "Zone aphotique (profonde)"]
+      },
+      {
+        "id": "marin-fonds-benthiques",
+        "nom": "Fonds marins (benthiques)",
+        "image": "https://cdn.pixabay.com/photo/2016/11/29/09/32/ocean-1867285_1280.jpg",
+        "subEcosystems": ["Plateau continental", "Abysses", "Sources hydrothermales"]
+      }
+    ]
+  },
+  {
+    "id": "montagnes",
+    "nom": "Montagnes",
+    "image": "https://cdn.pixabay.com/photo/2018/01/15/07/51/mountains-3085159_1280.jpg",
+    "theme": { "primary": "#334155", "accent": "#64748b", "bg": "#0b1220", "unsplash": "alpine mountains ridge snow" },
+    "subBiomes": [
+      { 
+        "id": "piedmonts-boises", 
+        "nom": "Piedmonts boisés", 
+        "image": "https://cdn.pixabay.com/photo/2016/11/29/13/04/forest-1869713_1280.jpg",
+        "subEcosystems": [] 
+      },
+      { 
+        "id": "forets-montagnardes", 
+        "nom": "Forêts montagnardes", 
+        "image": "https://cdn.pixabay.com/photo/2019/09/22/18/34/mountain-4495864_1280.jpg",
+        "subEcosystems": [] 
+      },
+      { 
+        "id": "zones-alpines", 
+        "nom": "Zones alpines (au-dessus de la limite des arbres)", 
+        "image": "https://cdn.pixabay.com/photo/2019/07/01/21/36/alps-4310321_1280.jpg",
+        "subEcosystems": [] 
+      },
+      { 
+        "id": "glaciers-neiges-eternelles", 
+        "nom": "Glaciers & neiges éternelles", 
+        "image": "https://cdn.pixabay.com/photo/2016/02/18/22/16/mountain-1208262_1280.jpg",
+        "subEcosystems": [] 
+      }
+    ]
+  }
+]
