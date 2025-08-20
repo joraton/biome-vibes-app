@@ -158,6 +158,31 @@ export const getUserByClerkId = query({
 });
 
 // Mutation pour ajouter une évaluation complète
+// Query pour récupérer toutes les évaluations avec les informations utilisateur
+export const getAllEvaluationsWithUsers = query({
+  args: {},
+  handler: async (ctx) => {
+    const evaluations = await ctx.db.query("userBiomeEvaluations").collect();
+    
+    const evaluationsWithUsers = await Promise.all(
+      evaluations.map(async (evaluation) => {
+        const user = await ctx.db
+          .query("users")
+          .withIndex("by_userId", (q) => q.eq("userId", evaluation.userId))
+          .first();
+        
+        return {
+          ...evaluation,
+          userEmail: user?.email || "Email non disponible",
+          userName: user?.name || "Nom non disponible"
+        };
+      })
+    );
+    
+    return evaluationsWithUsers;
+  },
+});
+
 export const addEvaluation = mutation({
   args: {
     biomeId: v.string(),

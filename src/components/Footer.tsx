@@ -1,4 +1,5 @@
 import { Heart, Leaf } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
@@ -67,7 +68,9 @@ export const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="flex items-center space-x-1 text-sm text-muted-foreground">
               <span>Fait avec</span>
-              <Heart className="w-4 h-4 text-red-500 fill-current" />
+              <Link to="/historique-special" className="inline-flex items-center hover:scale-110 transition-transform">
+                <Heart className="w-4 h-4 text-red-500 fill-current hover:text-red-600 cursor-pointer" />
+              </Link>
               <span>pour la nature</span>
             </div>
             

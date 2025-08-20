@@ -10,6 +10,7 @@ import { UserSync } from "./components/auth/UserSync";
 import Index from "./pages/Index";
 import BiomePage from "./pages/BiomePage";
 import SubBiomePage from "./pages/SubBiomePage";
+import SpecialHistoryPage from "./pages/SpecialHistoryPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -30,6 +31,7 @@ const App = () => (
               <Route path="/" element={<Index />} />
               <Route path="/biome/:biomeId" element={<BiomePage />} />
               <Route path="/biome/:biomeId/:subBiomeId" element={<SubBiomePage />} />
+              <Route path="/historique-special" element={<SpecialHistoryPage />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
