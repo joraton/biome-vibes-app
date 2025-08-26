@@ -29,9 +29,9 @@ const subBiomeImages: Record<string, string> = {
   'marin-oceans-ouverts': 'https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=1280&h=800&fit=crop&crop=center',
   'marin-fonds-benthiques': 'https://images.unsplash.com/photo-1583212292454-1fe6229603b7?w=1280&h=800&fit=crop&crop=center',
   'piedmonts-boises': 'https://cdn.pixabay.com/photo/2018/08/21/23/29/forest-3622519_1280.jpg',
-  'forets-montagnardes': 'https://cdn.pixabay.com/photo/2017/08/06/12/06/people-2591874_1280.jpg',
-  'zones-alpines': 'https://cdn.pixabay.com/photo/2016/11/21/16/05/adventure-1846482_1280.jpg',
-  'glaciers-neiges-eternelles': 'https://cdn.pixabay.com/photo/2017/01/28/02/24/japan-2014619_1280.jpg'
+  'forets-montagnardes': 'https://images.unsplash.com/photo-1599168215926-ebe820046d54?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  'zones-alpines': 'https://images.unsplash.com/photo-1627414365154-5757e8ba4bdd?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  'glaciers-neiges-eternelles': 'https://images.unsplash.com/photo-1440631194798-e78809f62275?q=80&w=1473&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
 };
 
 /**
