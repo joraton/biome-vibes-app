@@ -30,6 +30,7 @@ const SpecialHistoryPage = () => {
   // Emails spéciaux à afficher
   const specialEmails = [
     "tachipistacchio@gmail.com",
+    "jonathan.darmouni@gmail.com",
     user?.emailAddresses[0]?.emailAddress
   ].filter(Boolean);
 
@@ -66,6 +67,9 @@ const SpecialHistoryPage = () => {
   const getUserDisplayName = (email: string) => {
     if (email === "tachipistacchio@gmail.com") {
       return "Tachipistacchio";
+    }
+    if (email === "jonathan.darmouni@gmail.com") {
+      return "Jonathan";
     }
     if (email === user?.emailAddresses[0]?.emailAddress) {
       return "Vous";
