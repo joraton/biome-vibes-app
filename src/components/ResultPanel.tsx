@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { getScoreFeedback } from "@/lib/storage";
 import { useNavigate } from "react-router-dom";
+import { scrollToTop } from "@/hooks/use-scroll-to-top";
 
 interface ResultPanelProps {
   scoreTest20: number;
@@ -34,6 +35,7 @@ export const ResultPanel = ({
   const feedback = getScoreFeedback(finalScore);
 
   const handleBackToBiomes = () => {
+    scrollToTop();
     navigate(`/`);
   };
 

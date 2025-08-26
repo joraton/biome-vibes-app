@@ -7,6 +7,7 @@ import { Authenticated } from 'convex/react';
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import { UserSync } from "./components/auth/UserSync";
+import { useScrollToTop } from "./hooks/use-scroll-to-top";
 import Index from "./pages/Index";
 import BiomePage from "./pages/BiomePage";
 import SubBiomePage from "./pages/SubBiomePage";
@@ -15,29 +16,38 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
+// Composant interne pour utiliser le hook useScrollToTop
+const AppContent = () => {
+  useScrollToTop();
+  
+  return (
+    <div className="min-h-screen flex flex-col">
+      <Header />
+      <Authenticated>
+        <UserSync />
+      </Authenticated>
+      <main className="flex-1">
+        <Routes>
+          <Route path="/" element={<Index />} />
+          <Route path="/biome/:biomeId" element={<BiomePage />} />
+          <Route path="/biome/:biomeId/:subBiomeId" element={<SubBiomePage />} />
+          <Route path="/historique-special" element={<SpecialHistoryPage />} />
+          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </main>
+      <Footer />
+    </div>
+  );
+};
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <div className="min-h-screen flex flex-col">
-          <Header />
-          <Authenticated>
-            <UserSync />
-          </Authenticated>
-          <main className="flex-1">
-            <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/biome/:biomeId" element={<BiomePage />} />
-              <Route path="/biome/:biomeId/:subBiomeId" element={<SubBiomePage />} />
-              <Route path="/historique-special" element={<SpecialHistoryPage />} />
-              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </main>
-          <Footer />
-        </div>
+        <AppContent />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

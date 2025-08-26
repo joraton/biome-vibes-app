@@ -4,6 +4,7 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, ChevronRight } from "lucide-react";
 import { useEffect } from "react";
+import { scrollToTop } from "@/hooks/use-scroll-to-top";
 import biomesDataRaw from '@/data/biomes.json';
 import { Biome } from '@/types/biome';
 import { loadBiomesWithImages } from '@/lib/imageLoader';
@@ -41,10 +42,12 @@ const BiomePage = () => {
   }
 
   const handleSubBiomeClick = (subBiomeId: string) => {
+    scrollToTop();
     navigate(`/biome/${biomeId}/${subBiomeId}`);
   };
 
   const handleBackToHome = () => {
+    scrollToTop();
     navigate('/');
   };
 

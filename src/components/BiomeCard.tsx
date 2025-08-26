@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
+import { scrollToTop } from "@/hooks/use-scroll-to-top";
 import type { Biome } from "@/types/biome";
 
 interface BiomeCardProps {
@@ -11,6 +12,7 @@ export const BiomeCard = ({ biome }: BiomeCardProps) => {
   const navigate = useNavigate();
 
   const handleExplore = () => {
+    scrollToTop();
     navigate(`/biome/${biome.id}`);
   };
 

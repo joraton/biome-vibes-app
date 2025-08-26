@@ -7,6 +7,7 @@ import { ResultPanel } from "@/components/ResultPanel";
 import { HistoryModal } from "@/components/HistoryModal";
 import { ArrowLeft } from "lucide-react";
 import { useEffect, useState } from "react";
+import { scrollToTop } from "@/hooks/use-scroll-to-top";
 import biomesDataRaw from "@/data/biomes.json";
 import { biomeDescriptions } from "@/lib/biomeDescriptions";
 import { 
@@ -64,6 +65,7 @@ const SubBiomePage = () => {
   }
 
   const handleBackToBiome = () => {
+    scrollToTop();
     navigate(`/biome/${biomeId}`);
   };
 

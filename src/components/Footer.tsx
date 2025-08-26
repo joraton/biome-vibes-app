@@ -1,5 +1,6 @@
 import { Heart, Leaf } from "lucide-react";
 import { Link } from "react-router-dom";
+import { scrollToTop } from "@/hooks/use-scroll-to-top";
 
 export const Footer = () => {
   return (
@@ -23,17 +24,17 @@ export const Footer = () => {
             <h3 className="font-semibold text-foreground">Navigation</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="/" className="text-muted-foreground hover:text-foreground transition-colors">
+                <a href="/" onClick={scrollToTop} className="text-muted-foreground hover:text-foreground transition-colors">
                   Accueil
                 </a>
               </li>
               <li>
-                <a href="/#biomes" className="text-muted-foreground hover:text-foreground transition-colors">
+                <a href="/#biomes" onClick={scrollToTop} className="text-muted-foreground hover:text-foreground transition-colors">
                   Explorer les biomes
                 </a>
               </li>
               <li>
-                <a href="/historique" className="text-muted-foreground hover:text-foreground transition-colors">
+                <a href="/historique" onClick={scrollToTop} className="text-muted-foreground hover:text-foreground transition-colors">
                   Mon historique
                 </a>
               </li>
